@@ -48,7 +48,7 @@ public class ChamadoService {
 		return repository.save(oldObj);
 	}
 
-	private Chamado newChamado(ChamadoDTO obj) {
+	public Chamado newChamado(ChamadoDTO obj) {
 		Tecnico tecnico = tecnicoService.findById(obj.getTecnico());
 		Cliente cliente = clienteService.findById(obj.getCliente());
 		
